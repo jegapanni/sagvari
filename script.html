@@ -1,0 +1,21 @@
+<input type="number" value="1" onchange="d=Number(this.value);f()">
+<hr>
+Kerület: <span id="t"></span>
+<hr>
+Terület: <span id="t"></span>
+<script>
+    d = 1
+    function f() {
+        r = d / 2
+        k = Math.PI * d
+        t = Math.PI * r ** 2
+        document.getElementById("k").innerHTML = k
+        document.getElementById("t").innerHTML = t
+    }
+</script>
+<style>
+    span {
+        background-color: aquamarine(192, 221, 211);
+        font-size: larger;
+    }
+</style>
